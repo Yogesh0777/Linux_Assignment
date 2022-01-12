@@ -1,0 +1,203 @@
+Q.Features of kernel?
+
+- A core feature of any operating system, the kernel manages communication between hardware and software.
+  The kernel is responsible for managing memory, and I/O to memory, cache, the hard drive, and other devices.
+  It also handles device signals, task scheduling, and other essential duties.
+
+Q. difference between linux and windows operating system?
+
+	Linux                                          	                                   Windows
+*	Linux is a open source operating system.	                       While windows are the not the open source operating system.
+*	Linux is free of cost.	                                              While it is costly.
+*	It’s file name case-sensitive.	                               While it’s file name is case-insensitive.
+*	In linux, monolithic kernel is used.	                               While in this, micro kernel is used.
+*	Linux is more efficient in comparison of windows.	                While windows are less efficient.
+*	There is forward slash is used for Separating the directories.	While there is back slash is used for Separating the directories.
+*	Linux provides more security than windows.	                        While it provides less security than linux.
+
+ Q. What do you mean by opensource?
+    Open source software is code that is designed to be publicly accessible—anyone can see, modify.
+
+Q. Explain the output of "ls -l" command
+    It give the list of the following directory.
+    
+Q.  what are monolithic and microservices?
+    - Monolithic architecture is built as one large system and is usually one code-baseIt has shared database
+    - Microservices architecture is built as small independent module based on business functionality
+      Each project and module has their own database
+      
+Q.difference between agile and DevOps? 
+  Agile	,DevOps - Agile refers to an iterative approach which focuses on collaboration, customer feedback, and small, rapid releases.	
+  DevOps is considered a practice of bringing development and operations teams together.
+  Purpose  =	Agile helps to manage complex projects.	DevOps central concept is to manage end-to-end engineering processes.
+  Task =	Agile process focusses on constant changes.	DevOps focuses on constant testing and delivery.
+
+ Q. How to create multipple files with single command?
+    touch file1 file2 file3
+ 
+ Q.  Where are unit files located?
+     /usr/lib/systemd
+ 
+ Q. What are an absolute path and relative path?
+    Absolute path is exact path where we want to go and relative path is present path
+ 
+ Q. What are hard links?
+    Hard link are just like copy of that file with same Inodes .
+ 
+ Q. After ll command what is the arrow indicates to and what it is pointing to?
+    It show the complete detail of files present in that directory .
+    
+ Q. In vim how can we search inside the file?
+    /search 
+
+ Q.How to delete files in vim editor?
+    Shift+d and then y
+
+ Q. Difference between wq and x? 
+     wq = save and exit 
+     x = exit without save
+
+ Q.what are hidden files in linux
+    files used in order to execute some scripts or to store configuration about some services on your host.
+    
+ Q. systemd vs initd?
+    Initd -->The init daemon is the first process executed by the Linux Kernel and its process ID (PID) is always 1. Its purpose is to initialize, manage and 
+    track system services and daemons. In other words, the init daemon is the parent of all processes on the system.
+    Systemd --> Systemd (system daemon) is an init daemon used by modern systems and starts system services in parallel which remove unnecessary delays and speeds
+    up the initialization process.
+    Init and Systemd are both init daemons but it is better to use the latter since it is commonly used in recent Linux Distros. Init uses service whereas 
+    Systemd uses systemctl to manage Linux services.
+
+ Q.How to identify which type of file is this?
+    ls -lah
+   
+ Q. Why lib,lib64 is in a different color?
+     Files that can be used for various functions
+     change in color may depends upon link, directory, image etc. 
+     
+  Q. What things does kernel manage?
+     1. Kernel takes care of how much memory is used to store, where you store.
+     2. It determines which processes use the CPU, for how much time, and for what purpose.
+     3. It acts as an interpreter between the hardware and processes.
+  
+  Q. Explain the output of the “ls-l” command?
+      It shows all the lists and information about all the files and directories within the system.
+  
+  Q. How to create multiple files with a single command?
+       Using TOUCH command
+ 
+ Q   How to delete files in vim editor?
+         :!rm filename
+          Then in terminal
+          Shift+zz
+ 
+ Q What are hidden files?
+      All the files that start with (.) are hidden files   
+      
+  Q. What is Firewall?
+     A firewall is a security device in the form of computer hardware or software. 
+     It can help protect your network by acting as an intermediary between your internal network and outside traffic. 
+     It monitors attempts to gain access to your operating system and blocks unwanted incoming traffic and unrecognized sources
+     
+  Q. How does it do this(Firewall)?
+     A firewall acts as a barrier or filter between your computer and another network such as the internet. 
+     You could think of a firewall as a traffic controller. It helps to protect your network and information by managing your network traffic. 
+     This includes blocking unsolicited incoming network traffic and validating access by assessing network traffic for anything malicious like hackers and 
+     malware.
+     
+  Q. How does a firewall work?
+     To start, a firewalled system analyzes network traffic based on rules.
+     A firewall only welcomes those incoming connections that it has been configured to accept. 
+     It does this by allowing or blocking specific data packets — units of communication you send over digital networks — based on pre-established security rules.
+     A firewall works like a traffic guard at your computer’s entry point, or port. Only trusted sources, or IP addresses, are allowed in. 
+     IP addresses are important because they identify a computer or source, just like your postal address identifies where you live.
+    
+  Q. Why do we need firewalls?
+     You might already engage in certain safe computer and internet use practices, including these:
+     You don’t click on unknown links or attachments.
+     You only log on to trustworthy, known websites.
+     You never give out any personal information unless it is absolutely necessary.
+     You have strong, unique, complex passwords for each online account that you update often.
+     
+ Q.  What does a firewall protect against?
+     A firewall can help protect your computer and data by managing your network traffic. 
+     It does this by blocking unsolicited and unwanted incoming network traffic. 
+     A firewall validates access by assessing this incoming traffic for anything malicious like hackers and malware that could infect your computer.
+ 
+ Q.  What is use of iptables in Linux?
+     iptables is a user-space utility program that allows a system administrator to configure the IP packet filter rules of the Linux kernel firewall, implemented as different Netfilter modules. 
+     The filters are organized in different tables, which contain chains of rules for how to treat network traffic packets.
+ 
+ Q.  What is chain in iptables?
+     The filter table in iptables has three chains (sets of rules). The INPUT chain is used for any packet coming into the system. 
+     The OUTPUT chain is for any packet leaving the system. And the FORWARD chain is for packets that are forwarded (routed) through the system.
+  
+ Q.  apt vs apt-get?
+     The apt update command not just update the repository index but also tells if and how many new versions of the software are available in the repository.
+     Let us see some more apt commands which replaced the apt-get. To view these commands, you can type apt help or visit the apt man page by typing apt 
+     man in the Terminal. It will display all the information related to apt
+
+ Q.  apt upgrade vs apt update?
+     apt upgrade--updates all the packages presently installed in our Linux system to their latest versions.
+     apt update--command is we are asking our Linux machine to go browse these lists and copy the latest version of them and put them in your local machine.
+     
+ Q.  what is package manager?
+     a package manager is a tool that allows users to install, remove, upgrade, configure and manage software packages on an operating system.
+     The package manager can be a graphical application like a software center or a command line tool like apt-get
+     
+ Q.  low level vs high level package manager?
+     High-level package managers download packages figure out the dependencies for you, and deal with groups of packages. 
+     Low-level managers unpack individual packages run scripts, and get the software installed correctly.
+     
+ Q.  iptable vs ufw ?
+     Iptables is a kernel level ip filtering mechanism. It does allow you to make routing decisions and so on on IP packets.
+     UFW is a simplified firewall mechanism that is implemented on top of iptables. UFW is not as flexible but is easier to configure for common scenarios.
+     UFW provides a basic default firewall and allows you to easily turn on and off basic services. 
+     To use IPtables you need to understand TCP/IP connections, more complicated protocols (e.g. NFS) and it can still be complicated.
+ 
+ Q.  apt-get vs dpkg?
+      DPKG->the dpkg just install the .deb file, but will not install its dependencies because it doesn't have those files and it does not have access to 
+      repositories to go pull the dependencies from.
+      apt-get->It is a Package Management System. So, it handles the installation of Debian packages on Debian-based Linux distributions.
+      A Package Management System is a set of tools that will help us install, remove, and change packages easily.
+      apt-get will look for the dependencies and install them.
+
+ Q.  what is SSH?
+     SSH stands for "Secure Shell." The SSH protocol was designed as a secure alternative to unsecured remote shell protocols. 
+     It utilizes a client-server paradigm, in which clients and servers communicate via a secure channel.
+
+ Q. And SSH uses?
+    SSH is widely used in data centers to provide secure management, remote access to resources, software patches, and updates. 
+    The protocol also enables protected router management, server hardware maintenance, and virtualization platform administration.
+    
+ Q. What is .pemfiles?
+    pem file format is mostly used to store cryptographic keys. This file can be used for different purposes. 
+    The . pem file defines the structure and encoding file type that is used to store the data. 
+    The pem file contains the standard dictated format to start and end a file.
+
+ Q. what is sshd in linux?
+    sshd is the OpenSSH server process. It listens to incoming connections using the SSH protocol and acts as the server for the protocol. 
+    It handles user authentication, encryption, terminal connections, file transfers, and tunneling.
+
+ Q. sshd vs ssh?
+    The main difference is that sshd is a server (like a web server serving https) and SSH is a client.
+    and the server provide its own public key which can be fingerprinted, checked and remembered to by the client in order to prevent MITM attacks
+    
+ Q. Why SSH is used in Linux?
+    The ssh command provides a secure encrypted connection between two hosts over an insecure network. This connection can also be used for terminal access,
+    file transfers, and for tunneling other applications
+     
+ Q. What is SCP?
+    Secure Copy or SCP is a means of securley transferring files between two machines on a network. SCP uses SSH for improved security and 
+    will prompt you if it needs a password or passphrase for authentication.
+    
+ Q. What is keys?
+    keys is use to access the server.
+    
+ Q. how to create own key pair?
+    1. ssh-keygen
+    2. ssh-keygen -t rsa -b 4096
+ 
+ 
+ 
+ 
